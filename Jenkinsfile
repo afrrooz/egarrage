@@ -3,10 +3,10 @@ pipeline {
 
     environment {
         // Docker Hub Credentials ID configured in Jenkins Credentials Manager
-        DOCKER_HUB_CREDENTIALS = 'docker-hub-credentials'
+        DOCKER_HUB_CREDENTIALS = 'dockerhub-egarrage-credentials'
         
         // Change 'your-dockerhub-username' to your actual Docker Hub username/organization
-        DOCKER_HUB_USER        = 'your-dockerhub-username'
+        DOCKER_HUB_USER        = 'afroz05'
         
         // Image names
         BACKEND_IMAGE          = "${DOCKER_HUB_USER}/egarrage-backend"
