@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 129898048758.dkr.ecr.ap-south-1.amazonaws.com/egarrage-backend:500173577ff4bf22819a522e8e26066
+          image: 129898048758.dkr.ecr.ap-south-1.amazonaws.com/egarrage-backend:500173577ff4bf22819a522e8e26066b7c197c66
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
