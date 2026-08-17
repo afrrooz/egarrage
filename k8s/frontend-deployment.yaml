@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: egarrage-frontend
+  namespace: egarrage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: egarrage-frontend
+  template:
+    metadata:
+      labels:
+        app: egarrage-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: 129898048758.dkr.ecr.ap-south-1.amazonaws.com/egarrage-frontend:500173577ff4bf22819a522e8e26066
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5173
+          env:
+            - name: VITE_API_URL
+              value: "http://egarrage-backend:5000"
