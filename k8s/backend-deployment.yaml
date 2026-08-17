@@ -20,7 +20,7 @@ spec:
       containers:
         - name: backend
 
-          image: 129898048758.dkr.ecr.ap-south-1.amazonaws.com/egarrage-backend:7308da5e2edff14fdce2fc9450a504df3cb332c5
+          image: 129898048758.dkr.ecr.ap-south-1.amazonaws.com/egarrage-backend:8cd5265bfe688874adf6ddd2f51c43de8ce6d43e
 
           imagePullPolicy: Always
 
